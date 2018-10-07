@@ -45,3 +45,14 @@ console.log(jsonObj)
 var jsObj = JSON.parse(jsonObj)
 console.log(jsObj)
 
+// Lambda, Closer
+
+function addTwo(a) {
+    // return function (b) {
+    //     return a+b
+    // }
+    return b => a + b
+}
+
+var func3 = addTwo(3)
+console.log(func3(10))
